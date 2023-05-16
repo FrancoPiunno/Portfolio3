@@ -2,20 +2,20 @@
 
 @font-face {
     font-family: "SCHABO-Condensed";
-    src: url(fonts/schabo-condensed-webfont.woff) format("woff");
-    src: url(fonts/schabo-condensed-webfont.woff2) format("woff2");
+    src: url('fonts/schabo-condensed-webfont.woff') format("woff");
+    src: url('fonts/schabo-condensed-webfont.woff2') format("woff2");
   }
 
 @font-face {
     font-family: "Helvetica Now Text";
-    src: url(fonts/helveticanowtext-regular-webfont.woff) format("woff");
-    src: url(fonts/helveticanowtext-regular-webfont.woff2) format("woff2");
+    src: url('fonts/helveticanowtext-regular-webfont.woff') format("woff");
+    src: url('fonts/helveticanowtext-regular-webfont.woff2') format("woff2");
 }
 
 @font-face {
   font-family: "Helvetica Now Text Extra-Light";
-  src: url(fonts/helveticanowtext-extralight-webfont.woff) format("woff");
-  src: url(fonts/helveticanowtext-extralight-webfont.woff2) format("woff2");
+  src: url('fonts/helveticanowtext-extralight-webfont.woff') format("woff");
+  src: url('fonts/helveticanowtext-extralight-webfont.woff2') format("woff2");
 }
 
 @font-face {
