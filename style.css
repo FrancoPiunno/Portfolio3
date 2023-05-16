@@ -4,26 +4,21 @@
     font-family: 'SCHABO-Condensed';
     font-style: normal;
     font-weight: 100;
-    src: local('')
+    src: local('SCHABO')
          url('fonts/schabo-condensed-webfont.woff') format("woff"),
          url('fonts/schabo-condensed-webfont.woff2') format("woff2");
     font-display: swap;
   }
 
-@font-face {
-    font-family: "Helvetica Now Text";
-    src: url('fonts/helveticanowtext-regular-webfont.woff') format("woff"), url('fonts/helveticanowtext-regular-webfont.woff2') format("woff2");
-}
-
-@font-face {
-  font-family: 'Helvetica Now Text Extra-Light';
-  font-style: normal;
-  font-weight: 100;
-  src: local('')
-       url('fonts/helveticanowtext-extralight-webfont.woff') format("woff"),
-       url('fonts/helveticanowtext-extralight-webfont.woff2') format("woff2");
-  font-display: swap;
-}
+  @font-face {
+    font-family: 'Helvetica Now Text ';
+    src: local('Helvetica Now Text  Extra Light'), local('Helvetica-Now-Text--Extra-Light'),
+        url('HelveticaNowText-ExtraLight.woff2') format('woff2'),
+        url('HelveticaNowText-ExtraLight.woff') format('woff'),
+        url('HelveticaNowText-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
 
 @font-face {
   font-family: "Helvetica Now Text Thin";
@@ -102,7 +97,7 @@ body{
   border-radius: 100%;
   cursor: pointer;
   color: #FEF2C2;
-  font-family: "Helvetica Now Text Extra-Light";
+  font-family: 'Helvetica Now Text  Extra Light';
   line-height: 145%;
 }
 
@@ -155,7 +150,7 @@ body{
   position: relative;
   font-size: 50%;
   left: -10px;
-  font-family: "Helvetica Now Text Extra-Light";
+  font-family: 'Helvetica Now Text  Extra Light';
 }
 
 .nav-item-wrapper::after{
@@ -254,7 +249,7 @@ body{
 }
 
 .pais{
-  font-family: "Helvetica Now Text Extra-Light";
+  font-family: 'Helvetica Now Text  Extra Light';
   font-weight: 100;
   font-size: 40%;
 }
@@ -267,7 +262,7 @@ body{
 
 .hora{
   padding-top: -20%;
-  font-family: "Helvetica Now Text Extra-Light";
+  font-family: 'Helvetica Now Text  Extra Light';
   font-weight: 100;
   font-size: 40%;
 }
@@ -431,7 +426,7 @@ right: 0;
 
 .copy{
   overflow: hidden;
-  font-family: 'Helvetica Now Text Extra-Light';
+  font-family: 'Helvetica Now Text  Extra Light';
   font-size: 65%;
   display: flex;
   flex-direction: column;
@@ -646,7 +641,7 @@ right: 0;
   background-color: #0E0E0E;
   border: none;
   border-bottom: 4px solid #262626;
-  font-family: 'Helvetica Now Text Extra-Light';
+  font-family: 'Helvetica Now Text  Extra Light';
   outline: none;
   letter-spacing: -0.055em;
   color: #FEF2C2;
@@ -661,7 +656,7 @@ right: 0;
   font-size: 50%;
   background: linear-gradient(180deg, #1D1D1D 0%, rgba(29, 29, 29, 0) 100%);
   border: none;
-  font-family: 'Helvetica Now Text Extra-Light';
+  font-family: 'Helvetica Now Text  Extra Light';
   outline: none;
   letter-spacing: -0.055em;
   color: #FEF2C2;
@@ -669,7 +664,7 @@ right: 0;
 
 .emailform p{
   font-size: 70%;
-  font-family: 'Helvetica Now Text Extra-Light';
+  font-family: 'Helvetica Now Text  Extra Light';
   color: #FEF2C2;
 }
 
@@ -677,7 +672,7 @@ right: 0;
 .emailform button {
   justify-self: right;
   cursor: none;
-  font-family: 'Helvetica Now Text Extra-Light';
+  font-family: 'Helvetica Now Text  Extra Light';
   font-size: 1rem;
   color: #FEF2C2;
   background-color: #0E0E0E;
@@ -763,7 +758,7 @@ right: 0;
 footer {
   height: 60vh;
   padding-top: 15%;
-  font-family: 'Helvetica Now Text Extra-Light';
+  font-family: 'Helvetica Now Text  Extra Light';
   font-size: 30%;
   margin-inline: auto;
   display:grid;
