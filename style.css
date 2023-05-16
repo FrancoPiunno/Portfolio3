@@ -1,25 +1,33 @@
 /*BASE*/
 
 @font-face {
-    font-family: "SCHABO-Condensed";
-    src: url('fonts/schabo-condensed-webfont.woff') format("woff");
-    src: url('fonts/schabo-condensed-webfont.woff2') format("woff2");
+    font-family: 'SCHABO-Condensed';
+    font-style: normal;
+    font-weight: 100;
+    src: local('')
+         url('fonts/schabo-condensed-webfont.woff') format("woff"),
+         url('fonts/schabo-condensed-webfont.woff2') format("woff2");
+    font-display: swap;
   }
 
 @font-face {
     font-family: "Helvetica Now Text";
-    src: url('fonts/helveticanowtext-regular-webfont.woff') format("woff");
-    src: url('fonts/helveticanowtext-regular-webfont.woff2') format("woff2");
+    src: url('fonts/helveticanowtext-regular-webfont.woff') format("woff"), url('fonts/helveticanowtext-regular-webfont.woff2') format("woff2");
 }
 
 @font-face {
-  font-family: "Helvetica Now Text Extra-Light";
-  src: url('fonts/helveticanowtext-extralight-webfont.woff') format("woff");
-  src: url('fonts/helveticanowtext-extralight-webfont.woff2') format("woff2");
+  font-family: 'Helvetica Now Text Extra-Light';
+  font-style: normal;
+  font-weight: 100;
+  src: local('')
+       url('fonts/helveticanowtext-extralight-webfont.woff') format("woff"),
+       url('fonts/helveticanowtext-extralight-webfont.woff2') format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Helvetica Now Text Thin";
+
   src: url(fonts/HelveticaNowText-Thin.woff) format("truetype");
 }
 
@@ -395,6 +403,7 @@ right: 0;
 }
 
 .photo1{
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -403,7 +412,7 @@ right: 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: min(200%, 1920px);
+  width: min(100%, 1920px);
 }
 
 .meetmetitle{
