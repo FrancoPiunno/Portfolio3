@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="resources/icon2.webp">
+    <title>FRANCO PIUNNO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <div class="cursor outer"></div>
+    <div class="cursor inner"></div>
+
+    <div class="container">
+
+    <!---------------------Home-----------------------> 
+        <section class="home" id="home">
+            <div class="argentina">
+                <span class="pais">ARG</span>
+                    <span class="hora"></span>
+            </div>
+
+            <div class="content sidebar">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+
+            <div class="logoandphrase">
+                <div class="slogan">
+                    <p>IN CHARGE OF GIVING YOUR PROJECTS AN IDENTITY</p>
+                    <p>SINCE 2020</p>
+                </div>
+                <div class="logotype1">
+                    <img src="resources/logo_franco.webp" alt="">
+                </div>
+            </div>
+
+                <div class="slider">
+                    <div class="slider-slide">
+                        <img src="resources/sliderportfolio.png" alt="">
+                    </div>
+                    <div class="slider-slide">
+                        <img src="resources/sliderportfolio.png" alt="">
+                    </div>
+                    <div class="slider-slide">
+                       <img src="resources/sliderportfolio.png" alt="">
+                    </div>
+                </div>
+        </section>
+
+    <!---------------------Meet Me//Bio/----------------------->        
+        <section class="meetme" id="meet_me">
+            <div class="photo1">
+                <img src="resources/imagen.webp" alt="">
+            </div>
+
+            <div class="meetmetitle">
+                <img src="resources/meetme.webp" alt="">
+            </div>
+        
+            <div class="copy">
+                <p>I was born in Posadas (2003), Misiones, a young city with an unique artistic impront where I currently live. During my growth I was directly influenced by design in various forms.</p>
+                <p>From that starting point and with my creative concern I was able to incur in various forms of multimedia creation that gave rise after several years to a maturation in the field of design.</p>
+            </div>
+        </section>
+        
+    <!---------------------Projects----------------------->
+        <section id="projects">
+
+            <nav class="menu">
+                <div class="menu__item">
+                    <div class="menu__item-image_wrapper">
+                        <div class="menu__item-image_inner">
+                            <img src="resources/pro_img01.webp" alt="" class="menu__item-image">
+                        </div>
+                    </div>
+                    <a href= "https://www.behance.net/gallery/151705277/Triple-Impacto" target="_blank" class="menu__item-text">
+                        <span class="menu__item-innertext">TRIPLE IMPACTO</span>
+                    </a>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item-image_wrapper">
+                        <div class="menu__item-image_inner">
+                            <img src="resources/pro_img02.webp" alt="" class="menu__item-image">
+                        </div>
+                    </div>
+                    <a href= "https://www.instagram.com/p/Ch99mcZumnG/" target="_blank" class="menu__item-text">
+                        <span class="menu__item-innertext">PANIC! AT THE DISCO</span>
+                    </a>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item-image_wrapper">
+                        <div class="menu__item-image_inner">
+                            <img src="resources/pro_img03.webp" alt="" class="menu__item-image">
+                        </div>
+                    </div>
+                    <a href= "https://www.instagram.com/p/Ckquy6XuEcQ/" target="_blank" class="menu__item-text">
+                        <span class="menu__item-innertext">PARAMORE</span>
+                    </a>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__item-image_wrapper">
+                        <div class="menu__item-image_inner">
+                            <img src="resources/pro_img04.png" alt="" class="menu__item-image">
+                        </div>
+                    </div>
+                    <span class="menu__item-text">
+                        <span class="menu__item-innertext">UTOPIA</span>
+                    </span>
+                </div>
+            </nav>
+        </section>
+
+    <!---------------------Contact----------------------->        
+    <section class="contact" id="contact">
+        <div class="contacttitle">
+            <img src="resources/lwt.webp" alt="">
+        </div>
+    
+        <form action="" class="emailform" id="email_form" netlify>
+            <input type="email" name="user_mail" required placeholder="Mail" id="mail">
+            <textarea name="project" id="texto" required placeholder="Enter your message"></textarea>
+            <p class="contactmessage" id="contact_message"></p>
+            <button type="submit" id="button" class="button">Send</button>
+        </form>
+    </section>
+
+
+
+    
+    <!---------------------Footer----------------------->
+        <footer>
+            <div class="box">
+                <p>FRANCO PIUNNO
+                <br>Ⓒ2023</p>
+            </div>
+            <div class="box">
+                <p>Bolivia 3361
+                <br>Posadas, Misiones
+                <br>Argentina</p>
+            </div>
+            <div class="box">
+                <p>E-MAIL: francopiunno182@gmail.com
+                <br>PHONE NUMBER: +54 376 475 6838</p>
+            </div>
+             <div class="box">
+                <a class="instagram" href="https://www.instagram.com/franco_piunno/"><svg xmlns="http://www.w3.org/2000/svg"width="24" height="24"style="fill:#FFFFFF;"><path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"></path> </svg></a>
+                <a class="behance" href="https://www.behance.net/francopiunno"><img src="resources/behance.png" alt=""></a>
+            </div>
+        </footer>
+        <a class="finallogo" href="#home"><img src="resources/logo_franco.webp" alt=""></a>
+    </div>
+
+    <!---------------------Nav----------------------->
+        <div class="nav-toggle">
+            <button id="toggle">+</button>
+        </div>
+        <div class="nav">
+            <div class="nav-conteiner">
+                <div class="nav-wrapper">
+                    <div class="nav-link">
+                        <a href="#home">HOME <sup></sup></a>
+                        <div class="nav-item-wrapper"></div>
+                    </div>
+                    <div class="nav-link">
+                        <a href="#meet_me">MEET ME <sup></sup></a>
+                        <div class="nav-item-wrapper"></div>
+                    </div>
+                    <div class="nav-link">
+                        <a href="#projects">PROJECTS <sup>04</sup></a>
+                        <div class="nav-item-wrapper"></div>
+                    </div>
+                    <div class="nav-link">
+                        <a href="#contact">CONTACT <sup></sup></a>
+                        <div class="nav-item-wrapper"></div>
+                    </div>
+                </div>
+                <div class="nav-wrapper nav-2">
+                    <a href="https://www.instagram.com/franco_piunno/">INSTAGRAM</a>
+                    <a href="https://www.behance.net/francopiunno">BEHANCE</a>
+                </div>
+            </div>
+        </div>
+
+    <!--Script-->
+
+    <script type="text/javascript">
+        const timeElement = document.querySelector(".hora");
+
+        /**
+         * @param {Date} date
+         */
+        function formatTime(date) {
+        const hours12 = date.getHours() % 12 || 12;
+        const minutes = date.getMinutes();
+        const isAm = date.getHours() < 12;
+
+        return `${hours12.toString().padStart(2, "0")}:${minutes
+            .toString()
+            .padStart(2, "0")} ${isAm ? "AM" : "PM"}`;
+        }
+
+        /**
+         * @param {Date} date
+         */
+        function formatDate(date) {
+
+        return `${DAYS[date.getDay()]},`;
+        }
+
+        setInterval(() => {
+        const now = new Date();
+
+        timeElement.textContent = formatTime(now);
+        }, 200);
+    </script>
+
+    <script>
+        var copy = document.querySelector(".slider-slide").cloneNode(true);
+        document.querySelector(".slider").appendChild(copy);
+    </script>
+    
+    <script>
+        const {gsap}=window;
+
+        gsap
+            .timeline()
+            .set(".menu", {autoAlpha: 1})
+            .from(".menu__ite-innertext", {
+                delay: 1,
+                duration: 0.85,
+                xPercent: 25,
+                yPercent: 125,
+                stagger: 0.095,
+                skewY: gsap.utils.wrap([-8, 8]),
+                ease: "expo.out",
+            })
+            .set(".menu", {PointerEvents: "all"});
+
+        gsap.defaults({
+            duration: 0.55,
+            ease: "expo.out",
+        });
+
+        const menuItems = document.querySelectorAll(".menu__item");
+
+        menuItems.forEach((item) => {
+            const imageWrapper = item.querySelector(".menu__item-image_wrapper");
+            const imageeWrapperBounds = imageWrapper.getBoundingClientRect();
+            let itemBounds = item.getBoundingClientRect();
+
+            const onMouseEnter = () => {
+                gsap.set(imageWrapper, {
+                    scale: 0.8,
+                    xPercent: 25,
+                    yPercent: 50,
+                    rotation: -15,
+                });
+                gsap.to(imageWrapper, { opacity: 1, scale: 1, yPercent: 0, rotation:0 })
+            }
+
+            const onMouseLeave = () => {
+                gsap.to(imageWrapper, {
+                    opacity: 0,
+                    yPercent: -50,
+                    xPercent: 25,
+                    scale: 0,
+                    rotation: -15,
+                })
+            }
+
+            const onMouseMove = ({ x, y }) => {
+                let yOffset = itemBounds.top / imageeWrapperBounds.height;
+                yOffset = gsap.utils.mapRange( 0, 1.5, -150, 150, yOffset);
+                gsap.to(imageWrapper, {
+                    duration: 1.25,
+                    x: Math.abs(x- itemBounds.left) - imageeWrapperBounds / 1.55,
+                    y: Math.abs(y-itemBounds.top) - imageeWrapperBounds / 2 - yOffset,
+                })
+            }
+
+            item.addEventListener ("mouseenter", onMouseEnter);
+            item.addEventListener ("mouseleave", onMouseLeave);
+            item.addEventListener ("mousemove", onMouseMove);
+
+            window.addEventListener("resize", () => {
+                itemBounds = item.getBoundingClientRect();
+            })
+        })
+    </script>
+
+    <script class="cursor_script">
+        const cursor = document.querySelectorAll(".cursor");
+        const buttons = document.querySelectorAll(id="button");
+
+        window.addEventListener("mousemove", (e) => {
+        
+        let x = e.pageX;
+        let y = e.pageY;
+        
+        cursor.forEach(el => {
+            el.style.left = `${x}px`;
+            el.style.top = `${y}px`;
+            
+            buttons.forEach(link => {
+            button.addEventListener("mouseenter", () => {
+                el.classList.add("hover");
+            })
+            button.addEventListener("mouseleave", () => {
+                el.classList.remove("hover");
+            })
+            })
+            
+        })
+        })
+    </script>
+
+    <script>
+        const tl = gsap.timeline({paused: true})
+
+        function openNav() {
+            animateOpenNav();
+            const navBtm = document.getElementById("toggle")
+            navBtm.onclick = function (e) {
+                tl.reversed(!tl.reversed())
+                }
+            }
+
+            openNav();
+
+            function animateOpenNav() {
+                tl.to(".container", 1, 
+                {
+                    top: "70vh",
+                    scale: 0.925,
+                    ease: "power4.out"
+                }, "-=1")
+
+                tl.to(".nav-link > a", 1, 
+                {
+                    top: 0,
+                    ease: "power3.out",
+                    stagger: {
+                        amount: 0.2
+                    }
+                }, "-=1")
+
+                tl.to(".nav-2 > a", 0.6, 
+                {
+                    opacity: 1,
+                    top: 0,
+                    ease: "power3.out",
+                    stagger: {
+                        amount: 0.1
+                    }
+                }, "-=1") .reverse();
+            }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    
+Mi manchi Z.ia.
+
+Ogni giorno penso a te, a come ci hai lasciato troppo presto per la tua età e troppo tardi per
+Che io maturi e impari a trascorrere più tempo e meglio con la famiglia. fa male nella mia anima
+non aver passato più tempo con te l'ultima volta che ti ho visto, forse accecato dalla malinconia,
+forse ero solo egoista e arrogante.
+
+Spero che un giorno ci rivedremo, non so come o quando, non credo che mi corrisponda
+ma mi assicurerò di essere un nipote migliore.
+
+Non voglio dimenticare quella volta che mi hai detto che la prossima volta che sarebbe venuto Paul lo avremmo visto.
+E a causa di queste cose nella vita, potresti non essere in grado di farlo come volevi. Se quel turno è fatto
+e posso essere presente, sarò sicuro che anche tu mi accompagnerai in qualche modo
+forma.
+
+Devo solo ringraziarti, ti sei sempre ricordato di me e spero di fare lo stesso con te. non so se
+Questo è quello che ti aspetteresti da me, non so davvero se a un certo punto potrò restituirti anche se lo è
+un po' quello che hai dato a me e a tutti quelli che amo, ma nonostante i tanti dubbi che ho oggi
+Oggi posso essere certo di una cosa: voglio condividere con voi questo traguardo e voglio dedicarlo a voi.
+
+C'è ancora del lavoro da fare, nemmeno quando lo pubblicherò sarò sicuro che sia pronto, ma lo prometto
+Continuerò a lavorare per renderlo il migliore possibile.
+
+Per te con tanto amore.
+Franco.
+
+-->
+</body>
+</html>
