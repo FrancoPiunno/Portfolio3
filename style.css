@@ -1,7 +1,7 @@
 /*BASE*/
 
 @font-face {
-    font-family: 'SCHABO-Condensed';
+    font-family: 'SCHABO';
     font-style: normal;
     font-weight: 100;
     src: local('SCHABO')
@@ -10,25 +10,39 @@
     font-display: swap;
   }
 
-  @font-face {
-    font-family: 'Helvetica Now Text ';
-    src: local('Helvetica Now Text  Extra Light'), local('Helvetica-Now-Text--Extra-Light'),
-        url('HelveticaNowText-ExtraLight.woff2') format('woff2'),
-        url('HelveticaNowText-ExtraLight.woff') format('woff'),
-        url('HelveticaNowText-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-  }
+  
 
 @font-face {
-  font-family: "Helvetica Now Text Thin";
-
-  src: url(fonts/HelveticaNowText-Thin.woff) format("truetype");
+  font-family: "Helvetica Now Text";
+  font-style: 'Extra Light';
+  font-weight: 100;
+  src: local('Helvetica Now Text  Extra Light')
+       url('HelveticaNowText-ExtraLight.woff') format("woff"),
+       url('HelveticaNowText-ExtraLight2.woff') format("woff2"),
+       url('HelveticaNowText-ExtraLight.ttf') format("truetype");
 }
 
 @font-face {
-  font-family: "Founders Grotesk Light";
-  src: url(fonts/FoundersGrotesk-Light.woff) format("truetype");
+  font-family: "Founders Grotesk";
+  font-style: 'Light';
+  font-weight: 100;
+  src: local('Founders Grotesk  Light')
+       url('fonts/FoundersGrotesk-Light.woff') format("woff"),
+       url('fonts/FoundersGrotesk-Light.otf') format("truetype");
+}
+
+.noise::before{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  /* you can control opacity of noise  */
+  opacity: .027;  
+  z-index: 1000;
+  pointer-events: none;
+  background: url(noise.gif) ;
 }
 
 body::-webkit-scrollbar{
@@ -52,6 +66,7 @@ html{
   width: 100%;
   z-index: 2;
   background-color: #0E0E0E;
+  scale: 1;
 }
 
 * {
@@ -92,13 +107,20 @@ body{
   font-size: 40px;
   width: 63px;
   height: 63px;
-  background-color: #0e0e0e50;
+  background-color: #0e0e0e00;
   border: 1px solid #FEF2C2;
   border-radius: 100%;
   cursor: pointer;
   color: #FEF2C2;
-  font-family: 'Helvetica Now Text  Extra Light';
+  font-family: "Helvetica Now Text";
+  font-style: 'Extra Light';
+  font-weight: 100;
   line-height: 145%;
+}
+
+input:checked ~ .nav-toggle #toggle {
+  position: absolute;
+  transform: rotate(22deg);
 }
 
 #toggle:hover{
@@ -141,16 +163,19 @@ body{
 
 .nav-link :hover{
   opacity: 0.5;
+  padding-left: 3vw;
+  transition: all 0.7s ease;
 }
 
 
 .nav-link sup{
-  letter-spacing: -3px;
   opacity: 0.5;
   position: relative;
   font-size: 50%;
   left: -10px;
-  font-family: 'Helvetica Now Text  Extra Light';
+  font-family: "Helvetica Now Text";
+  font-style: 'Extra Light';
+  font-weight: 100;
 }
 
 .nav-item-wrapper::after{
@@ -235,6 +260,9 @@ body{
   mix-blend-mode: difference;
 }
 
+
+/*HOME*/
+
 .home {
   width: 100%;
   height: 100vh;
@@ -249,7 +277,9 @@ body{
 }
 
 .pais{
-  font-family: 'Helvetica Now Text  Extra Light';
+  font-family: "Helvetica Now Text";
+  font-style: 'Extra Light';
+  font-weight: 100;
   font-weight: 100;
   font-size: 40%;
 }
@@ -262,7 +292,9 @@ body{
 
 .hora{
   padding-top: -20%;
-  font-family: 'Helvetica Now Text  Extra Light';
+  font-family: "Helvetica Now Text";
+  font-style: 'Extra Light';
+  font-weight: 100;
   font-weight: 100;
   font-size: 40%;
 }
@@ -297,8 +329,17 @@ background-color: #242424;
   background-color: #242424;
 }
 
+.logoandphrase {
+  position: absolute;
+  margin: auto;
+  overflow: hidden;
+  bottom: 10.5%;
+  right: 0;
+  left: 0;
+}
 
 .logotype1{
+  overflow: hidden;
   display: flex;
   justify-content: center;
 }
@@ -387,6 +428,55 @@ right: 0;
 .slider-slide {
   display: inline-block;
   animation: 35s slide infinite linear;
+  padding-left: 3px;
+}
+
+/*SLIDER 2*/
+
+@keyframes slide2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slider2 {
+background-color: #0E0E0E;
+margin: auto;
+overflow: hidden;
+white-space: nowrap;
+bottom: 1vh;
+right: 0;
+left: 0;
+}
+
+
+.slider-slide2 img {
+  height: 6vh;
+  padding-left: 28px;
+}
+
+.slider2:before,
+.slider2:after {
+
+width: 250px;
+height: 100%;
+content: "";
+}
+
+.slider2:before {
+left: 0;
+}
+
+.slider2:after {
+right: 0;
+}
+
+.slider-slide2 {
+  display: inline-block;
+  animation: 35s slide infinite linear;
   padding-left: 10px;
 }
 
@@ -398,16 +488,28 @@ right: 0;
 }
 
 .photo1{
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .photo1 img{
+  width: 100%;
+  height: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: min(100%, 1920px);
+}
+
+@media (max-width: 40em) {
+  .photo1 img {
+    display: none;
+  }
+
+  .copy p{
+    font-size: 0%;
+  }
 }
 
 .meetmetitle{
@@ -425,14 +527,14 @@ right: 0;
 /*MEET ME BIOs*/
 
 .copy{
-  overflow: hidden;
-  font-family: 'Helvetica Now Text  Extra Light';
+  font-family: 'Helvetica Now Text', sans-serif;
+  font-style: 'Extra Light';
+  font-weight: 100;
   font-size: 65%;
   display: flex;
   flex-direction: column;
   margin-inline: auto;
   width: min(75%, 90.5rem);
-
 }
 
 @media (min-width: 40em) {
@@ -549,14 +651,25 @@ right: 0;
 */
 
 /*PROJECTS*/
-.projects{
+#projects{
+  padding-top: 6em;
   width: 100%;
   height: 100vh;
 }
 
+.collabs {
+  width: 100%;
+  text-align: center;
+}
+
+.collabs p{
+  font-family: "Helvetica Now Text";
+  font-size: 35px;
+}
+
 
 .menu{
-  padding-top: 16em;
+  padding-top: 6em;
   height: 100vh;
   margin-inline: auto;
   width: min(75%, 90.5rem);
@@ -641,9 +754,11 @@ right: 0;
   background-color: #0E0E0E;
   border: none;
   border-bottom: 4px solid #262626;
-  font-family: 'Helvetica Now Text  Extra Light';
+  font-family: "Helvetica Now Text";
+  font-style: 'Extra Light';
+  font-weight: 100;
   outline: none;
-  letter-spacing: -0.055em;
+  letter-spacing: -0.025em;
   color: #FEF2C2;
 }
 
@@ -656,15 +771,18 @@ right: 0;
   font-size: 50%;
   background: linear-gradient(180deg, #1D1D1D 0%, rgba(29, 29, 29, 0) 100%);
   border: none;
-  font-family: 'Helvetica Now Text  Extra Light';
+  font-family: "Helvetica Now Text";
+  font-style: 'Extra Light';
+  font-weight: 100;
   outline: none;
-  letter-spacing: -0.055em;
   color: #FEF2C2;
 }
 
 .emailform p{
   font-size: 70%;
-  font-family: 'Helvetica Now Text  Extra Light';
+  font-family: "Helvetica Now Text";
+  font-style: 'Extra Light';
+  font-weight: 100;
   color: #FEF2C2;
 }
 
@@ -672,12 +790,14 @@ right: 0;
 .emailform button {
   justify-self: right;
   cursor: none;
-  font-family: 'Helvetica Now Text  Extra Light';
+  font-family: "Helvetica Now Text";
+  font-style: 'Extra Light';
+  font-weight: 100;
   font-size: 1rem;
   color: #FEF2C2;
   background-color: #0E0E0E;
   width: 10vh;
-  letter-spacing: -0.055em;
+  letter-spacing: -0.025em;
   height: 3.6vh;
   border: 1px solid #FEF2C2;
   border-radius: 50px;
@@ -699,66 +819,16 @@ right: 0;
   width: 98%;
 }
 
-/*SLIDER 1
-
-@keyframes slide {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-
-.slider {
-  position: absolute;
-  margin: auto;
-  overflow: hidden;
-  white-space: nowrap;
-  padding-top: 45vh;
-  bottom: 1vh;
-  right: 0;
-  left: 0;
-}
-
-
-.slider-slide img {
-    height: 6vh;
-    padding-left: 10px 0;
-}
-
-.slider:before,
-.slider:after {
-
-  width: 250px;
-  height: 100%;
-  content: "";
-}
-
-.slider:before {
-  left: 0;
-}
-
-.slider:after {
-  right: 0;
-}
-
-.slider-slide {
-    display: inline-block;
-    animation: 35s slide infinite linear;
-    padding-left: 10px;
-}
-*/
-
-
-
 
 /*FOOTER*/
 
 footer {
   height: 60vh;
   padding-top: 15%;
-  font-family: 'Helvetica Now Text  Extra Light';
+  font-family: "Helvetica Now Text";
+  font-style: 'Extra Light';
+  font-weight: 100;
+  font-weight: 100;
   font-size: 30%;
   margin-inline: auto;
   display:grid;
